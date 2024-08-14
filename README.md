@@ -1,3 +1,5 @@
+We use this on our Jenkins CI , to cleanup our NFS based shared repository
+
 `mvn-repo-cleaner` - Maven Repository Cleaner is a utility to clean up the local 
 `.m2` directory on a developer box.
 
