@@ -12,7 +12,7 @@
 
     <groupId>com.github.techpavan</groupId>
     <artifactId>mvn-repo-cleaner</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
@@ -101,6 +101,13 @@
                 </executions>
             </plugin>
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>com.google.cloud.artifactregistry</groupId>
+                <artifactId>artifactregistry-maven-wagon</artifactId>
+                <version>2.2.3</version>
+            </extension>
+        </extensions>
     </build>
 
 </project>
