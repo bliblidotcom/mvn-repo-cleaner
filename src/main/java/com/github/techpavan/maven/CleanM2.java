@@ -176,7 +176,9 @@ public class CleanM2 {
             // When none of the above are matched, add it for latest / oldest processing
             addToProcessMap(fileInfo);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("IOException: {}", e.getMessage(), e);
+        } catch (Exception e) {
+            log.error("Exception in parseAndEvaluate, file: {}, error: {}", file, e.getMessage(), e);
         }
     }
 
